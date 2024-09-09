@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://password-reset-frontend-client.netlify.app', // Ensure this matches the frontend URL
+  origin: 'https://master--password-reset-frontend-client.netlify.app', // Ensure this matches the frontend URL
   // credentials: true,
 }));
 // app.options('*', cors({   origin: 'https://password-reset-frontend-client.netlify.app',   credentials: true, }));
