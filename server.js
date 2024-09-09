@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Ensure this matches the frontend URL
+  origin: 'https://passwordapp-frontend.netlify.app/', // Ensure this matches the frontend URL
   credentials: true,
 }));
 app.use(express.json());
