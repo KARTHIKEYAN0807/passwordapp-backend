@@ -14,10 +14,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://password-reset-frontend-client.netlify.app/', // Ensure this matches the frontend URL
-  credentials: true,
+  origin: 'https://password-reset-frontend-client.netlify.app', // Ensure this matches the frontend URL
+  // credentials: true,
 }));
-app.options('*', cors({   origin: 'https://password-reset-frontend-client.netlify.app',   credentials: true, }));
+// app.options('*', cors({   origin: 'https://password-reset-frontend-client.netlify.app',   credentials: true, }));
 app.use(express.json());
 app.use(morgan('dev')); // Log requests to the console
 
